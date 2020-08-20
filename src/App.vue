@@ -22,6 +22,10 @@ import zapatos from "./components/zapatos";
 import zapato from "./components/zapato";
 // eslint-disable-next-line camelcase
 import footer_main from "./components/footer";
+import term_cond from "./components/term&cond";
+// eslint-disable-next-line camelcase
+import med_pago from "./components/med_pago";
+
 export default {
   name: "app",
   components: {
@@ -31,7 +35,9 @@ export default {
     body_main,
     footer_main,
     zapatos,
-    zapato
+    zapato,
+    term_cond,
+    med_pago
   }
 };
 </script>

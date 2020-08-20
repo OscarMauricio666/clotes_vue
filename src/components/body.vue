@@ -1,26 +1,46 @@
 <template>
   <div id="body_main">
-    <div class="img-main">
-      <img src="../assets/network.jpg" alt="img_main" />
-    </div>
+    <header class="main-header">
+      <div class="background-overlay text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 text-center justify-content-center align-self-center"
+            >
+              <h1>Esta es una prueba</h1>
+              <p>Estas preparado para lo que se viene!!ss!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 </template>
 
-<script>
+<script scope>
 export default {
   name: "body_main"
 };
 </script>
 
-<style>
-.img-main {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  height: auto;
+<style scoped>
+.main-header {
+  background: url(../assets/network.jpg);
+  position: relative;
+  background-size: cover;
+  min-height: 700px;
 }
-img {
+.background-overlay {
+  background: rgba(96, 163, 188, 0.6);
   width: 100%;
-  height: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0%;
+  position: absolute;
+}
+.row {
+  padding-top: 20%;
+  text-align: center;
 }
 </style>

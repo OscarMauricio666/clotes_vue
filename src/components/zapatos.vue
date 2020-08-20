@@ -142,4 +142,7 @@ export default {
   width: 100%;
   height: auto;
 }
+.row {
+  padding-top: 3%;
+}
 </style>

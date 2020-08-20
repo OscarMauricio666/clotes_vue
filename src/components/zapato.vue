@@ -1,14 +1,18 @@
 <template>
-  <div id="zapato" class="zapato">
-    <div class="card">
-      <div class="card">
-        <img v-bind:src="img" />
-        <div class="card-body">
-          <h5 class="card-title">{{ id }}</h5>
-          <p class="card-text">{{ titulo }}</p>
-          <p class="card-text">
-            <small class="text-muted">{{ des }}</small>
-          </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="zapato" class="zapato">
+          <div class="card">
+            <img v-bind:src="img" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title">{{ id }}</h5>
+              <p class="card-text">{{ titulo }}</p>
+              <p class="card-text">
+                <small class="text-muted">{{ des }}</small>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -33,4 +37,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.container {
+  align-content: center;
+  justify-content: center;
+}
+</style>
